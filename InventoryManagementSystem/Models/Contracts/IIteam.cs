@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace InventoryManagementSystem.Models.Contracts
+﻿namespace InventoryManagementSystem.Models.Contracts
 {
-	internal interface IIteam
+	public interface IIteam
 	{
+		int Id { get; }
+		
+		string ItemName { get; }
+
+		string Description { get; }
+
+		string GetDetails();
+		double CalculateValue();
+		string DisplayDescription();
 	}
 }
